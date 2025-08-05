@@ -1,11 +1,11 @@
 from telegram import Update
 from telegram.ext import ApplicationBuilder, CommandHandler, MessageHandler, ContextTypes, filters
 
-TOKEN = "8272083484:AAFawiygIAyrSU85SbVtdOZ2Z-zVnliEsHk"
+TOKEN = "8272083484:AAFVBArcF3HFtmNhqh1lRTfrMc6FQeXqvSY"
 
 # Команда /start
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    await update.message.reply_text("Привет! Я твой бот 🤖")
+    await update.message.reply_text("Привет! Я не твой бот 🤖")
 
 # Эхо-ответ
 async def echo(update: Update, context: ContextTypes.DEFAULT_TYPE):
